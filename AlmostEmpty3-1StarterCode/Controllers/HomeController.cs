@@ -10,11 +10,14 @@ namespace AlmostEmpty3_1StarterCode.Controllers
     {
         public IActionResult Index()
         {
+            //ViewBag.Title = "Home";  setting a title via ViewBag.element = "Name";
+            ViewData["Title"] = "Home"; //way #2 for Views
             return View();
         }
 
         public IActionResult About()
         {
+            ViewData["Title"] = "About"; //way #2 for Views
             return View();
         }
     }
