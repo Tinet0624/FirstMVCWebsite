@@ -46,7 +46,7 @@ namespace AlmostEmpty3_1StarterCode
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            app.UseEndpoints(endpoints => // sets up routing engine
             {
                 endpoints.MapControllerRoute(
                     name: "default",
