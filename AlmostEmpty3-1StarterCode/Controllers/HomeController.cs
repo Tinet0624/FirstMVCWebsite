@@ -20,5 +20,11 @@ namespace AlmostEmpty3_1StarterCode.Controllers
             ViewData["Title"] = "About"; //way #2 for Views
             return View();
         }
+
+        public IActionResult Page()
+        {
+            ViewData["Title"] = "Page";
+            return View();
+        }
     }
 }

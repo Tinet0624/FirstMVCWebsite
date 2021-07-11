@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/CSS/site.css" />
     <title>
         @*ViewBag.Title*@
         @ViewData["Title"]
@@ -12,6 +13,11 @@
     <header>
         <h1>Welcome to my first AVC webpage</h1>
     </header>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="About">About</a>
+        <!--need another webpage here-->
+    </nav>
     <main>
         @RenderBody() <!--views inject content here-->
     </main>
